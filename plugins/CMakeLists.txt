@@ -121,6 +121,8 @@ PLUGIN_OPTION(flatpak "Include Flatpak plugin" OFF)
 
 PLUGIN_OPTION(webrtc "Include Webrtc plugin" OFF)
 
+PLUGIN_OPTION(connman_sdbus "Include ConnMan sdbus D-Bus plugin" OFF)
+
 # TODO create source file for view
 
 # Platform View Plugins

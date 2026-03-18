@@ -107,6 +107,10 @@ void PluginsApiRegisterPlugins(FlutterDesktopEngineRef engine) {
   WebrtcPluginCApiRegisterWithRegistrar(
       FlutterDesktopGetPluginRegistrar(engine, ""));
 #endif
+#if ENABLE_PLUGIN_CONNMAN_SDBUS
+  ConnmanSdbusPluginCApiRegisterWithRegistrar(
+      FlutterDesktopGetPluginRegistrar(engine, ""));
+#endif
 }
 
 void PluginsAoiPlatformViewCreate(

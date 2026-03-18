@@ -129,5 +129,10 @@
 #include "webview_flutter_view/include/webview_flutter_view/webview_flutter_view_plugin_c_api.h"
 #endif
 
+#cmakedefine01 ENABLE_PLUGIN_CONNMAN_SDBUS
+#if ENABLE_PLUGIN_CONNMAN_SDBUS
+#include "connman_sdbus/include/connman_sdbus/connman_plugin_c_api.h"
+#endif
+
 
 #endif //CONFIG_PLUGINS_H_
